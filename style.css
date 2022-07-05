@@ -1,13 +1,12 @@
 /* https://coolors.co/22223b-4a4e69-9a8c98-c9ada7-f2e9e4 */
 
+/*police RIGHTEOUS*/
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
 
 * {
     margin: 0;
     padding: 0;
-}
-a{
-    text-decoration: none;
 }
 
 body {
@@ -15,6 +14,10 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+a{
+    text-decoration: none;
+}
+
 
 /**HOME PAGE -- HOME PAGE -- HOME PAGE*/
 #homeBody {
@@ -33,13 +36,14 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 h1 {
     font-family: "Righteous", cursive;
     color: #f2e9e4;
 }
 #homeTitle {
-    letter-spacing: 20px;
     font-size: 4em;
+    letter-spacing: 17px;
 }
 .currency {
     font-size: 24px;
@@ -52,16 +56,17 @@ h1 {
     width: 100%;
 }
 .searchBar {
-    height: 73px;
     width: 40%;
+    height: 64px;
     border-radius: 32px;
+    border: solid 3px #f2e9e4;
+
+    font-size: 25px;
     padding-left: 32px;
-    font-size: 32px;
 
     background-color: #4a4e69;
     color: #f2e9e4;
 
-    border: solid 3px #f2e9e4;
 }
 .searchBar::placeholder {
     color: #f2e9e4;
@@ -80,7 +85,6 @@ h1 {
     justify-content: center;
 
     background-color: #4a4e69;
-
     color: #c9ada7;
     font-size: 24px;
 }

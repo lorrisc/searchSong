@@ -2,6 +2,7 @@
     padding: 5px 40px;
 }
 
+/**HEADER -- HEADER*/
 #resultsBody header {
     display: flex;
     justify-content: space-between;
@@ -11,12 +12,12 @@
 }
 .resultTitle {
     letter-spacing: 5px;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 #resultsBody header form input {
     width: 500px;
     height: 41px;
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 /**NAVBAR -- NAVBAR*/
@@ -24,24 +25,22 @@
     width: 40%;
     height: 5vh;
     border-radius: 8px;
+    margin-bottom: 25px;
+    background-color: #4a4e69;
 
     display: flex;
     align-items: center;
-
-    background-color: #4a4e69;
 
     font-size: 28px;
     font-weight: bold;
     text-align: center;
-
-    margin-bottom: 25px;
 }
 .navbar p {
+    width: 200px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
     cursor: pointer;
 }
 .navbar p:nth-child(1) {
@@ -55,8 +54,8 @@
     color: #22223b;
 }
 
-/**TITLE / ARTISTS*/
-/**CARDS -- CARDS*/
+
+/**card container*/
 .cardTitleContenair,
 .cardArtistsContenair {
     display: none;
@@ -66,20 +65,24 @@
     flex-wrap: wrap;
 }
 
-.cardTitle {
+/**CARDS -- CARDS*/
+.cardTitle,
+.cardArtists {
     width: 330px;
     border-radius: 8px;
     background-color: #4a4e69;
     margin: 27.5px 55px 27.5px 0;
     padding-bottom: 20px;
 }
+
 /**image*/
 .backgroundCard {
     width: 100%;
     border-radius: 8px 8px 0 0;
 }
+
 /**text*/
-.cardTitle h2 {
+.cardTitle h2, .cardArtists h2 {
     font-size: 32px;
     font-weight: bold;
     letter-spacing: 3px;
