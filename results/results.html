@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!--basic meta-->
+        <meta charset="utf-8" />
+        <meta name="author" content="Lorris Crappier" />
+        <title>search song</title>
+
+        <!--Mobile-->
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <!--CSS-->
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="resultsStyle.css" />
+    </head>
+
+    <body id="resultsBody">
+        <header>
+            <a href="../index.html"> <h1 class="title resultTitle">SongSearch</h1></a>
+
+            <form action="#">
+                <input type="text" name="searchBar" class="searchBar" placeholder="Artistes ou titres" />
+            </form>
+        </header>
+
+        <main>
+            <section class="navbar">
+                <p class="activeNavbar">Titres</p>
+                <p>Artistes</p>
+            </section>
+
+            <section class="cardTitleContenair activeContenair">
+                <article class="cardTitle">
+                    <img src="../assets/backgroundSong/deuxFreres.jpg" alt="" class="backgroundCard" />
+                    <h2>Deux frères</h2>
+                    <h3>PNL</h3>
+                    <div class="linksCard">
+                        <p>Écouter le titre</p>
+                        <div class="linksCard__icon">
+                            <a href="https://www.apple.com/fr/apple-music/" target="_blank">
+                                <img src="../assets/streamingPlateforme/appleMusic.png" alt="" />
+                            </a>
+                            <a href="https://www.spotify.com" target="_blank">
+                                <img src="../assets/streamingPlateforme/spotify.png" alt="" />
+                            </a>
+                            <a href="https://www.deezer.com" target="_blank">
+                                <img src="../assets/streamingPlateforme/deezer.png" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="cardArtistsContenair">
+                <article class="cardTitle">
+                    <img src="../assets/backgroundSong/deuxFreres.jpg" alt="" class="backgroundCard" />
+                    <h2>PNL</h2>
+                    <div class="linksCard">
+                        <p>Rechercher l'artiste</p>
+                        <div class="linksCard__icon">
+                            <a href="https://www.apple.com/fr/apple-music/" target="_blank">
+                                <img src="../assets/streamingPlateforme/appleMusic.png" alt="" />
+                            </a>
+                            <a href="https://www.spotify.com" target="_blank">
+                                <img src="../assets/streamingPlateforme/spotify.png" alt="" />
+                            </a>
+                            <a href="https://www.deezer.com" target="_blank">
+                                <img src="../assets/streamingPlateforme/deezer.png" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer></footer>
+
+        <!-- <script src="song.js"></script> -->
+        <script src="titles_artists.js"></script>
+    </body>
+</html>

@@ -1,0 +1,86 @@
+/* https://coolors.co/22223b-4a4e69-9a8c98-c9ada7-f2e9e4 */
+
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+body {
+    background-color: #22223b;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/**HOME PAGE -- HOME PAGE -- HOME PAGE*/
+#homeBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/**HOME PAGE HEADER*/
+#homeBody header {
+    height: 39vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-family: "Righteous", cursive;
+    color: #f2e9e4;
+}
+#homeTitle {
+    letter-spacing: 20px;
+    font-size: 4em;
+}
+.currency {
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+/**HOME PAGE MAIN*/
+#homeBody main {
+    height: 54vh;
+    width: 100%;
+}
+.searchBar {
+    height: 73px;
+    width: 40%;
+    border-radius: 32px;
+    padding-left: 32px;
+    font-size: 32px;
+
+    background-color: #4a4e69;
+    color: #f2e9e4;
+
+    border: solid 3px #f2e9e4;
+}
+.searchBar::placeholder {
+    color: #f2e9e4;
+}
+.searchBar:focus {
+    outline: none !important;
+}
+
+/**HOME PAGE FOOTER*/
+#homeBody footer {
+    height: 7vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #4a4e69;
+
+    color: #c9ada7;
+    font-size: 24px;
+}
