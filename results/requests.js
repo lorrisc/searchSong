@@ -14,9 +14,13 @@ const options = {
 fetch("https://shazam.p.rapidapi.com/search?term=" + valueInput + "&locale=fr&offset=0&limit=5", options)
     .then((response) => response.json())
     .then((response) => {
+        const loaderGif = document.querySelector("#loader");
+        loaderGif.style.visibility = "hidden";
+
         console.log(response);
         console.log(response.tracks.hits.length);
-        for (i = 0; i < response.tracks.hits.length; i++) {//*title
+        for (i = 0; i < response.tracks.hits.length; i++) {
+            //*title
             //*card
             let card = document.createElement("article");
             card.className = "cardTitle";
@@ -55,35 +59,35 @@ fetch("https://shazam.p.rapidapi.com/search?term=" + valueInput + "&locale=fr&of
             linksPart.appendChild(linksPartIcon);
 
             //*Apple music
-            let linksApple = document.createElement('a');
-            linksApple.href = response.tracks.hits[i].track.hub.actions[1].uri
-            linksPartIcon.appendChild(linksApple)
+            let linksApple = document.createElement("a");
+            linksApple.href = response.tracks.hits[i].track.hub.actions[1].uri;
+            linksPartIcon.appendChild(linksApple);
 
-            let imgApple = document.createElement("img")
-            imgApple.src = '../assets/streamingPlateforme/appleMusic.png'
-            linksApple.appendChild(imgApple)
-            
+            let imgApple = document.createElement("img");
+            imgApple.src = "../assets/streamingPlateforme/appleMusic.png";
+            linksApple.appendChild(imgApple);
+
             //*Spotify music
-            let linksSpotify = document.createElement('a');
-            linksSpotify.href = response.tracks.hits[i].track.hub.providers[0].actions[0].uri
-            linksPartIcon.appendChild(linksSpotify)
+            let linksSpotify = document.createElement("a");
+            linksSpotify.href = response.tracks.hits[i].track.hub.providers[0].actions[0].uri;
+            linksPartIcon.appendChild(linksSpotify);
 
-            let imgSpotify = document.createElement("img")
-            imgSpotify.src = '../assets/streamingPlateforme/spotify.png'
-            linksSpotify.appendChild(imgSpotify)
-            
+            let imgSpotify = document.createElement("img");
+            imgSpotify.src = "../assets/streamingPlateforme/spotify.png";
+            linksSpotify.appendChild(imgSpotify);
+
             //*Deezer music
-            let linksDeezer = document.createElement('a');
-            linksDeezer.href = response.tracks.hits[i].track.hub.providers[1].actions[0].uri
-            linksPartIcon.appendChild(linksDeezer)
+            let linksDeezer = document.createElement("a");
+            linksDeezer.href = response.tracks.hits[i].track.hub.providers[1].actions[0].uri;
+            linksPartIcon.appendChild(linksDeezer);
 
-            let imgDeezer = document.createElement("img")
-            imgDeezer.src = '../assets/streamingPlateforme/deezer.png'
-            linksDeezer.appendChild(imgDeezer)
+            let imgDeezer = document.createElement("img");
+            imgDeezer.src = "../assets/streamingPlateforme/deezer.png";
+            linksDeezer.appendChild(imgDeezer);
         }
 
-
-        for (i = 0; i < response.artists.hits.length; i++) {//*artist
+        for (i = 0; i < response.artists.hits.length; i++) {
+            //*artist
             //*card
             let card = document.createElement("article");
             card.className = "cardTitle";
@@ -124,16 +128,16 @@ fetch("https://shazam.p.rapidapi.com/search?term=" + valueInput + "&locale=fr&of
             // let imgApple = document.createElement("img")
             // imgApple.src = '../assets/streamingPlateforme/appleMusic.png'
             // linksApple.appendChild(imgApple)
-            
-            //*Spotify music
-            let linksSpotify = document.createElement('a');
-            linksSpotify.href = 'spotify:search:'+response.artists.hits[i].artist.name;
-            linksPartIcon.appendChild(linksSpotify)
 
-            let imgSpotify = document.createElement("img")
-            imgSpotify.src = '../assets/streamingPlateforme/spotify.png'
-            linksSpotify.appendChild(imgSpotify)
-            
+            //*Spotify music
+            let linksSpotify = document.createElement("a");
+            linksSpotify.href = "spotify:search:" + response.artists.hits[i].artist.name;
+            linksPartIcon.appendChild(linksSpotify);
+
+            let imgSpotify = document.createElement("img");
+            imgSpotify.src = "../assets/streamingPlateforme/spotify.png";
+            linksSpotify.appendChild(imgSpotify);
+
             //*Deezer music
             // let linksDeezer = document.createElement('a');
             // linksDeezer.href = response.tracks.hits[i].track.hub.providers[1].actions[0].uri
