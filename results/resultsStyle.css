@@ -18,6 +18,7 @@
     width: 30vw;
     height: 41px;
     font-size: 1.2em;
+
 }
 
 /**NAVBAR -- NAVBAR*/
@@ -34,6 +35,8 @@
     font-size: 1.6em;
     font-weight: bold;
     text-align: center;
+
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 2px 5px -1px, rgba(255, 255, 255, 0.3) 0px 1px 3px -1px;
 }
 .navbar p {
     width: 200px;
@@ -77,6 +80,8 @@
     padding-bottom: 20px;
     cursor: default;
     transition-duration: 150ms;
+
+    box-shadow: rgba(0, 168, 232, 0.4) 0px 0px 0px 2px, rgba(0, 168, 232, 0.65) 0px 4px 6px -1px, rgba(0, 168, 232, 0.08) 0px 1px 0px inset;
 }
 
 /**image*/
