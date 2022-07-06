@@ -26,7 +26,7 @@
     height: 5vh;
     border-radius: 8px;
     margin-bottom: 25px;
-    background-color: #4a4e69;
+    background-color: #003459;
 
     display: flex;
     align-items: center;
@@ -52,8 +52,8 @@
     border-radius: 0 32px 0 0;
 }
 .activeNavbar {
-    background-color: #d9d9d9;
-    color: #22223b;
+    background-color: #00a8e8;
+    color: #00171f;
 }
 
 /**card container*/
@@ -72,7 +72,7 @@
 .cardArtists {
     width: 330px;
     border-radius: 8px;
-    background-color: #4a4e69;
+    background-color: #003459;
     margin: 0 25px 0 0;
     padding-bottom: 20px;
 }

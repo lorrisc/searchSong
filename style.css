@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #22223b;
+    background-color: #00171f;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -39,7 +39,7 @@ a{
 
 h1 {
     font-family: "Righteous", cursive;
-    color: #f2e9e4;
+    color: #ffffff;
 }
 #homeTitle {
     font-size: 4em;
@@ -59,13 +59,13 @@ h1 {
     width: 40%;
     height: 64px;
     border-radius: 32px;
-    border: solid 3px #f2e9e4;
+    border: solid 3px #ffffff;
 
     font-size: 25px;
     padding-left: 32px;
 
-    background-color: #4a4e69;
-    color: #f2e9e4;
+    background-color: #003459;
+    color: #ffffff;
 
 }
 .searchBar::placeholder {
@@ -84,7 +84,11 @@ h1 {
     align-items: center;
     justify-content: center;
 
-    background-color: #4a4e69;
-    color: #c9ada7;
+    background-color: #00a8e8;
+    color: #00171f;
     font-size: 24px;
+    font-weight: 600;
+}
+#homeBody footer p{
+    cursor: help;
 }
