@@ -30,7 +30,7 @@ fetch("https://shazam.p.rapidapi.com/search?term=" + valueInput + "&locale=fr&of
             //*image
             let background = document.createElement("img");
             background.className = "backgroundCard";
-            background.src = response.tracks.hits[i].track.images.background;
+            background.src = response.tracks.hits[i].track.images.coverart;
             card.appendChild(background);
 
             //*title
@@ -90,7 +90,7 @@ fetch("https://shazam.p.rapidapi.com/search?term=" + valueInput + "&locale=fr&of
             //*artist
             //*card
             let card = document.createElement("article");
-            card.className = "cardTitle";
+            card.className = "cardArtists";
             const containerArtist = document.querySelector(".cardArtistsContenair");
             containerArtist.appendChild(card);
 
@@ -121,13 +121,14 @@ fetch("https://shazam.p.rapidapi.com/search?term=" + valueInput + "&locale=fr&of
             linksPart.appendChild(linksPartIcon);
 
             //*Apple music
-            // let linksApple = document.createElement('a');
-            // linksApple.href = response.tracks.hits[i].track.hub.actions[1].uri
-            // linksPartIcon.appendChild(linksApple)
+            let linksApple = document.createElement("a");
+            linksApple.href = response.artists.hits[i].artist.weburl;
+            linksApple.target = "_blank";
+            linksPartIcon.appendChild(linksApple);
 
-            // let imgApple = document.createElement("img")
-            // imgApple.src = '../assets/streamingPlateforme/appleMusic.png'
-            // linksApple.appendChild(imgApple)
+            let imgApple = document.createElement("img");
+            imgApple.src = "../assets/streamingPlateforme/appleMusic.png";
+            linksApple.appendChild(imgApple);
 
             //*Spotify music
             let linksSpotify = document.createElement("a");
@@ -146,6 +147,20 @@ fetch("https://shazam.p.rapidapi.com/search?term=" + valueInput + "&locale=fr&of
             // let imgDeezer = document.createElement("img")
             // imgDeezer.src = '../assets/streamingPlateforme/deezer.png'
             // linksDeezer.appendChild(imgDeezer)
+
+            let carda = document.querySelectorAll(".cardTitle, .cardArtists");
+            for (let i = 0; i < carda.length; i++) {
+                carda[i].addEventListener("mouseenter", () => {
+                    carda[i].style.transform = "rotate(" + 0.5 + "deg)";
+
+                    setTimeout(() => {
+                        carda[i].style.transform = "rotate(" + -0.5 + "deg)";
+                    }, "150");
+                    setTimeout(() => {
+                        carda[i].style.transform = "rotate(" + 0 + "deg)";
+                    }, "300");
+                });
+            }
         }
     })
     .catch((err) => console.error(err));

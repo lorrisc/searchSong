@@ -75,6 +75,8 @@
     background-color: #003459;
     margin: 0 25px 0 0;
     padding-bottom: 20px;
+    cursor:default;
+    transition-duration: 150ms;
 }
 
 /**image*/
