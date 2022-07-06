@@ -8,7 +8,10 @@
     margin: 0;
     padding: 0;
 }
-
+*::selection {
+    background-color: #00a8e8;
+  }
+  
 body {
     background-color: #00171f;
     color: white;
