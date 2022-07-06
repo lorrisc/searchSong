@@ -3,24 +3,22 @@
 /*police RIGHTEOUS*/
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
-
 * {
     margin: 0;
     padding: 0;
 }
 *::selection {
     background-color: #00a8e8;
-  }
-  
+}
+
 body {
     background-color: #00171f;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
-a{
+a {
     text-decoration: none;
 }
-
 
 /**HOME PAGE -- HOME PAGE -- HOME PAGE*/
 #homeBody {
@@ -59,7 +57,7 @@ h1 {
     width: 100%;
 }
 .searchBar {
-    width: 40%;
+    width: 800px;
     height: 64px;
     border-radius: 32px;
     border: solid 3px #ffffff;
@@ -69,7 +67,6 @@ h1 {
 
     background-color: #003459;
     color: #ffffff;
-
 }
 .searchBar::placeholder {
     color: #f2e9e4;
@@ -92,6 +89,45 @@ h1 {
     font-size: 24px;
     font-weight: 600;
 }
-#homeBody footer p{
+#homeBody footer p {
     cursor: help;
+}
+
+@media screen and (max-width: 1000px) {
+    .searchBar {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .searchBar {
+        width: 80vw;
+    }
+    #homeTitle {
+        font-size: 3em;
+        letter-spacing: 14px;
+    }
+    .currency {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 500px) {
+
+    #homeTitle {
+        font-size: 2.5em;
+        letter-spacing: 11px;
+    }
+    .currency {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 400px) {
+
+    #homeTitle {
+        font-size: 2em;
+        letter-spacing: 7px;
+    }
+    .currency {
+        width: 80%;
+    }
 }

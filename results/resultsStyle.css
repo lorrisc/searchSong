@@ -15,7 +15,7 @@
     font-size: 1.8em;
 }
 #resultsBody header form input {
-    width: 500px;
+    width: 30vw;
     height: 41px;
     font-size: 1.2em;
 }
@@ -31,7 +31,7 @@
     display: flex;
     align-items: center;
 
-    font-size: 28px;
+    font-size: 1.6em;
     font-weight: bold;
     text-align: center;
 }
@@ -70,12 +70,12 @@
 /**CARDS -- CARDS*/
 .cardTitle,
 .cardArtists {
-    width: 330px;
+    width: 320px;
     border-radius: 8px;
     background-color: #003459;
-    margin: 0 25px 0 0;
+    margin: 0 25px 25px 0;
     padding-bottom: 20px;
-    cursor:default;
+    cursor: default;
     transition-duration: 150ms;
 }
 
@@ -88,16 +88,16 @@
 /**text*/
 .cardTitle h2,
 .cardArtists h2 {
-    font-size: 32px;
+    font-size: 2.2em;
     font-weight: bold;
     letter-spacing: 3px;
     margin-left: 13px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-top: 10px;
 }
 .cardTitle h3 {
-    font-size: 28px;
-    font-weight: 500;
+    font-size: 1.4em;
+    font-weight: 300;
     letter-spacing: 3px;
     margin-left: 13px;
 }
@@ -109,7 +109,7 @@
 }
 .linksCard p {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 1em;
     letter-spacing: 3px;
 }
 .linksCard__icon img {
@@ -117,10 +117,8 @@
     margin-right: 20px;
 }
 
-
-
 /**LOADER*/
-#loader{
+#loader {
     visibility: visible;
     position: absolute;
     top: 50%;
@@ -130,19 +128,75 @@
     width: 120px;
 }
 
+@media screen and (max-width: 1250px) {
+    .navbar {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1130px) {
+    .cardTitleContenair,
+    .cardArtistsContenair {
+        justify-content: center;
+    }
 
+}
+@media screen and (max-width: 1000px) {
+    .navbar {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .navbar {
+        width: 100%;
+    }
+    .navbar p {
+        width: 50%;
+    }
+    .navbar p:nth-child(2) {
+        border-radius: 32px 8px 8px 0;
+    }
+    #resultsBody {
+        padding: 5px 20px;
+    }
+    #resultsBody header {
+        flex-direction: column;
+    }
+    .resultTitle {
+        margin-bottom: 15px;
+    }
+    
+    #resultsBody header form input {
+        width: 70vw;
+    }
+    .navbar {
+        font-size: 1.3em;
+    }
+    .cardTitle h2, .cardArtists h2 {
+        font-size: 1.7em;
+    }
+    .cardTitle h3{
+        font-size: 1em;
+    }
+    .linksCard p{
+        font-size: 0.8em;
+    }
+    .cardTitle, .cardArtists{
+        margin: 0 25px 25px 0;
+    }
+    .cardTitleContenair,
+    .cardArtistsContenair {
+        justify-content: space-around;
+    }
 
-/**FOOTER*/
-#resultsBody footer{
-    position: absolute;
-    top: 50%;
-    left: 99%;
-    transform: translate(-50%, -50%);
-
-
-    writing-mode: vertical-rl;
-    text-orientation:upright;
-    font-weight: 900;
-    color: #00a8e8;
-    text-transform: uppercase;
+}
+@media screen and (max-width:500px) {
+    .cardTitle, .cardArtists{
+        margin: 0 0px 25px 0;
+    }
+}
+@media screen and (max-width: 430px) {
+    .cardTitle,
+    .cardArtists {
+        width: 90%;
+    }
 }
