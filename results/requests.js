@@ -55,13 +55,13 @@ fetch("https://shazam.p.rapidapi.com/search?term=" + valueInput + "&locale=fr&of
             linksPart.appendChild(linksPartIcon);
 
             //*Apple music
-            // let linksApple = document.createElement('a');
-            // linksApple.href = response.tracks.hits[i].track.hub.actions[1].uri
-            // linksPartIcon.appendChild(linksApple)
+            let linksApple = document.createElement('a');
+            linksApple.href = response.tracks.hits[i].track.hub.actions[1].uri
+            linksPartIcon.appendChild(linksApple)
 
-            // let imgApple = document.createElement("img")
-            // imgApple.src = '../assets/streamingPlateforme/appleMusic.png'
-            // linksApple.appendChild(imgApple)
+            let imgApple = document.createElement("img")
+            imgApple.src = '../assets/streamingPlateforme/appleMusic.png'
+            linksApple.appendChild(imgApple)
             
             //*Spotify music
             let linksSpotify = document.createElement('a');
@@ -73,13 +73,13 @@ fetch("https://shazam.p.rapidapi.com/search?term=" + valueInput + "&locale=fr&of
             linksSpotify.appendChild(imgSpotify)
             
             //*Deezer music
-            // let linksDeezer = document.createElement('a');
-            // linksDeezer.href = response.tracks.hits[i].track.hub.providers[1].actions[0].uri
-            // linksPartIcon.appendChild(linksDeezer)
+            let linksDeezer = document.createElement('a');
+            linksDeezer.href = response.tracks.hits[i].track.hub.providers[1].actions[0].uri
+            linksPartIcon.appendChild(linksDeezer)
 
-            // let imgDeezer = document.createElement("img")
-            // imgDeezer.src = '../assets/streamingPlateforme/deezer.png'
-            // linksDeezer.appendChild(imgDeezer)
+            let imgDeezer = document.createElement("img")
+            imgDeezer.src = '../assets/streamingPlateforme/deezer.png'
+            linksDeezer.appendChild(imgDeezer)
         }
 
 
