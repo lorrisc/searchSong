@@ -18,7 +18,6 @@
     width: 30vw;
     height: 41px;
     font-size: 1.2em;
-
 }
 
 /**NAVBAR -- NAVBAR*/
@@ -133,8 +132,30 @@
     width: 120px;
 }
 
+/**NO RESULT*/
+.noResult {
+    width: 40%;
+    height: 5vh;
+    border-radius: 8px;
+    /* background-color: #00a8e8; */
+    background: #f12711; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    color: #00171f;
+    font-size: 1.3em;
+    font-weight: bold;
+
+    /* box-shadow: rgb(255, 0, 0) 0px 2px 5px -1px, rgb(255, 0, 0) 0px 1px 3px -1px; */
+}
+
 @media screen and (max-width: 1250px) {
-    .navbar {
+    .navbar,
+    .noResult {
         width: 50%;
     }
 }
@@ -143,15 +164,19 @@
     .cardArtistsContenair {
         justify-content: center;
     }
-
+    .noResult {
+        margin-right: auto;
+    }
 }
 @media screen and (max-width: 1000px) {
-    .navbar {
+    .navbar,
+    .noResult {
         width: 60%;
     }
 }
 @media screen and (max-width: 800px) {
-    .navbar {
+    .navbar,
+    .noResult {
         width: 100%;
     }
     .navbar p {
@@ -169,33 +194,35 @@
     .resultTitle {
         margin-bottom: 15px;
     }
-    
+
     #resultsBody header form input {
         width: 70vw;
     }
     .navbar {
         font-size: 1.3em;
     }
-    .cardTitle h2, .cardArtists h2 {
+    .cardTitle h2,
+    .cardArtists h2 {
         font-size: 1.7em;
     }
-    .cardTitle h3{
+    .cardTitle h3 {
         font-size: 1em;
     }
-    .linksCard p{
+    .linksCard p {
         font-size: 0.8em;
     }
-    .cardTitle, .cardArtists{
+    .cardTitle,
+    .cardArtists {
         margin: 0 25px 25px 0;
     }
     .cardTitleContenair,
     .cardArtistsContenair {
         justify-content: space-around;
     }
-
 }
-@media screen and (max-width:500px) {
-    .cardTitle, .cardArtists{
+@media screen and (max-width: 500px) {
+    .cardTitle,
+    .cardArtists {
         margin: 0 0px 25px 0;
     }
 }
